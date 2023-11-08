@@ -1,0 +1,37 @@
+body {
+    background-color: gray;
+    font-family: Arial, sans-serif;
+}
+
+.faq {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.question {
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.question h3 {
+    margin: 0;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.question.open .answer {
+    display: block;
+    max-height: 1000px; /* Ajusta este valor según tus necesidades */
+    opacity: 1;
+}
